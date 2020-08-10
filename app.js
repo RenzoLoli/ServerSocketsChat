@@ -11,7 +11,7 @@ app.set("port", process.env.PORT || 3000);
 
 const server = http.createServer(app);
 
-app.use(express.static("public"));
+app.use(express.static("./public"));
 
 const IO = socketio.listen(server);
 
