@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="chat-all">
+        <div class="chat-users" >
+            <p id="chat-users-box-title" class="chat-box-title">
+                Users
+            </p>
+            <div id="chat-users-panel" class="chat-users-panel">
+                
+            </div>
+            <div class="chat-login" >
+                <p class="chat-box-title">
+                    Login
+                </p>
+                <div class="chat-login-box">
+                    <div class="chat-input">
+                        <input id="user-id"  placeholder="Nick" type="text">
+                    </div>
+                    <div class="chat-input">
+                        <input id="user-password" placeholder="Password" type="password">
+                    </div>
+                    <div class="chat-input">
+                        <button id="chat-button-send-login" class="chat-button-send chat-button-login">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-principal" >
+            <p id="chat-nickname" class="chat-nickname-title">
+                Anonimous
+            </p>
+            <div id="chat-area" class="chat-area"></div>
+            <input id="chat-mssg" type="text" class="chat-text-send"> 
+            <button id="chat-button-send" class="chat-button-send">-></button>
+        </div>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+}
+body{
+    background: url("fondo.jpg");
+    background-size: cover;
+}
+.chat-all{
+    margin: auto;
+    width: 800px;
+    text-align: center;
+   
+}
+
+.chat-users-panel{
+    border-radius: 10px;
+    /*border-width: 2px;
+    border-style: solid;*/
+    background: rgba(122, 30, 0, .4);
+    width: 200px;
+    height: 300px;
+    max-lines: 2px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.chat-principal{
+    display: inline-block;
+    height: 697px;
+    width: 550px;
+    border-width: 2px;
+}
+
+
+.chat-users{
+    float: left;
+    height: 701px;
+    width: 201px;
+}
+
+.chat-area{
+    border-radius: 10px;
+    /*border-style: solid;
+    border-width: 2px;*/
+    background: rgba(122, 30, 0, .4);
+    display: block;
+    width: 549px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.chat-text-send{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 488px;
+    padding-left: 10px;
+    height: 40px;
+}
+
+.chat-button-send{
+    color: white;
+    background: #3e3e3e;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10%;
+    float: right;
+    width: 48px;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+}
+
+.chat-user-mssg{
+    display: inline-block;
+    margin: 7px;
+    width: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgba(73, 87, 40, .8);
+    /*73, 87, 40*/
+    color: white;
+}
+
+.chat-user-nickname{
+    width: auto;
+    margin: 7px auto;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgba(0, 87, 40, .8);
+    /*73, 87, 40*/
+    color: white;
+    float: left;
+    
+}
+
+.chat-user-newUser{
+    margin: 7px;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgba(122, 14, 88, .8);
+    /*73, 87, 40*/
+    color: white;
+    text-align: left;
+}
+
+.chat-nickname-title{
+    border-radius: 10px;
+    background: #5e5e5e;
+    height: 32px;
+    margin: 0;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.chat-box-title{
+    border-radius: 10px;
+    background: #3e3e3e;
+    height: 32px;
+    width: 202px;
+    margin: 0;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+.chat-input{
+    margin: 0;
+    padding: 15px 20px;
+}
+
+.chat-login-box{
+    background: rgba(122, 30, 0, .4);
+    border-radius: 10px;
+    height: 170px;
+    
+}
+
+.chat-button-login{
+    width: 150px;
+    font-size: 20px;
+}
