@@ -9,7 +9,7 @@ var mssgs = [];
 const server = app.listen(process.env.PORT | 3000/*,"192.168.0.7"*/, ()=>{
     console.log("inicio");
 });
-app.use(express.static("hatLocal"));
+app.use(express.static("ChatLocal"));
 
 const IO = socketio(server);
 
