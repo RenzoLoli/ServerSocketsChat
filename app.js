@@ -6,7 +6,9 @@ var users = [];
 
 var mssgs = [];
 
-const server = app.listen(process.env.PORT || 3000/*,"192.168.0.7"*/, ()=>{
+app.set("port", process.env.PORT || 3000);
+
+const server = app.listen(app.get("port")/*,"192.168.0.7"*/, ()=>{
     console.log("inicio");
 });
 app.use(express.static("ChatLocal"));
