@@ -1,5 +1,6 @@
 const express = require("express");
 const socketio = require("socket.io");
+const http = require("http");
 const app = express();
 
 var users = [];
@@ -8,12 +9,15 @@ var mssgs = [];
 
 app.set("port", process.env.PORT || 3000);
 
-const server = app.listen(app.get("port")/*,"192.168.0.7"*/, ()=>{
-    console.log("inicio");
-});
+const server = http.createServer(app);
+
 app.use(express.static("ChatLocal"));
 
-const IO = socketio(server);
+const IO = socketio.listen(server);
+
+server.listen(app.get("port"), ()=>{
+    console.log("inizializado");
+}); 
 
 IO.on("connection",(socket)=>{
     console.log(socket.id +" conectado");
